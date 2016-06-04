@@ -60,7 +60,7 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I will use Emacs. After reading a lot of threads (or arguments) on some forums, it seems that both have their pros and cons. However, when I visited their websites, Emacs had a more modern design and was easier to navigate.
 
 --
 
@@ -68,6 +68,14 @@ What terminal editor will you use? How did you make your decision?
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I will use Atom because it seems to be quite modern and open source. Being open source is something I appreciate, after dabbling in the Android ecosystem. As long as there is a community around it, you will always be able to find an answer for almost any question. Plus, the community creates things that the team doesn't think of. It's also cool how you can theme it and change the styling.
+
+Command-Shift-P opens up the "Command Palette" which will actually show you a lot of the other shortcuts
+alt-backspace will delete to beginning of the word
+cmd-backapce will delete to beginning of the line
+ctrl-tab switches tabs/panes
+
+You can customize Atom by opening up the settings menu, installing packages, themes, and hacking Atom directly.
+
 
  
