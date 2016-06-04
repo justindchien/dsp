@@ -13,7 +13,17 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > pwd = print working directory
+sudo = become super user root
+exit = exit the shell
+apropos = find what manual page is appropriate
+find = find files
+xargs = execute arguments
+mv = move a file or directory
+cp = copy a file or directory
+rmdir = remove directory
+cd = change directory
+mkdir = make directory
 
 ---
 
@@ -28,7 +38,14 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 
+'ls' = list directory
+'ls -a' = list all files
+'ls -l' = list with long format
+'ls -lh' = list long format with readable file size
+'ls -lah' = list all files using long format with readable file size
+'ls -t' = sort by time and date
+'ls -Glp' = list long format and directories but exclude group information
 
 ---
 
@@ -36,7 +53,13 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 
+'ls -d' = displays only directories
+'ls -F' = flags filenames
+'ls -r' = displays files in reverse order
+'ls -u' = displays files by the file access time
+'ls -1' = displays each entry on a line
+
 
 ---
 
@@ -44,7 +67,9 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 'xargs' executes arguments, especially useful in combination with other commands. For example, to find and remove all jpg files in the current directory, 
+
+$ find . -name "*.jpg" | xargs rm
 
  
 
