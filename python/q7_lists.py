@@ -74,7 +74,8 @@ def remove_adjacent(nums):
     for x in range(0, len(nums)-1):
         if nums[x] != nums[x+1]:
             new_list.append(nums[x])
-    new_list.append(nums[-1])
+    if (len(nums)>0):
+        new_list.append(nums[-1])
     return new_list
     """
     Given a list of numbers, return a list where all adjacent equal
