@@ -42,8 +42,8 @@ lambda input: function_want_returned
 
 Example to sort x by last character: 
   x_last = sorted(x, key=lambda x: x[-1])
-  ```
-  
+```
+
 ---
 
 ###Q4. List Comprehension, Map &amp; Filter
