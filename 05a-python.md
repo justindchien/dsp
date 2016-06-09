@@ -36,13 +36,12 @@ Finding an element is faster in a set because it is hashabale.
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
 >> Python's 'lambda' is a tool for building functions and similar to anonymous functions. It is typically used to write functions that are only used once.
-```
+
 Syntax: 
 lambda input: function_want_returned
 
 Example to sort x by last character: 
   x_last = sorted(x, key=lambda x: x[-1])
-```
 
 ---
 
