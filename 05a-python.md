@@ -21,10 +21,12 @@ How are Python lists and tuples similar and different? Which will work as keys i
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
 >> They both hold multiple values. Lists can be indexed and keep order while sets are unordered without indexes unable to have duplicate data. 
+```
 Example of list: 
   weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 Example of set: 
   cart = set(['apple', 'banana', 'spam', 'ketchup', 'eggs'])
+```
 Finding an element is faster in a set because it is hashabale.
 
 ---
@@ -34,10 +36,13 @@ Finding an element is faster in a set because it is hashabale.
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
 >> Python's 'lambda' is a tool for building functions and similar to anonymous functions. It is typically used to write functions that are only used once.
-Syntax: lambda input: function_want_returned
+```
+Syntax: 
+lambda input: function_want_returned
+
 Example to sort x by last character: 
   x_last = sorted(x, key=lambda x: x[-1])
-
+```
 ---
 
 ###Q4. List Comprehension, Map &amp; Filter
@@ -46,8 +51,13 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 
 >> List comprehensions allow sequences to be built from other iterables, typically new list based on other lists.
 
-'map' will apply an operation to each item. Syntax: map(function, sequence)
-example:  doubled = map(lambda x: x*2, numbers)
+'map' will apply an operation to each item. 
+```
+Syntax:
+map(function, sequence)
+
+Example:
+doubled = map(lambda x: x*2, numbers)
 
 equivalent for loop:
   def map(function, sequence):
@@ -61,8 +71,11 @@ example of doubled as a for loop:
   doubled = []
   for number in numbers:
     doubled.append(numbers*2)
+```
 
-'filter' will keep the element that returns True. Syntax: filter(function, iterable)
+'filter' will keep the element that returns True. 
+```
+Syntax: filter(function, iterable)
 keep positive numbers: pos = filter(lambda x: x>0, numbers)
 
 equivalent for loop:
@@ -79,15 +92,16 @@ equivalent of keep positive numbers as a for loop:
     if (x>0):
       numbers.append(x)
   return pos
+```
 
 It is a lot easier, compact, and elegant to use the built in 'map' and 'filter' functions.
-
+```
 Set comprehension for removing duplicate names: 
 {name[0].upper() + name[1:].lower() for name in names}
 
 Dictionary comprehension for counting letters in words: 
 {letter : word.count(letter) for letter in word}
-
+```
 ---
 
 ###Complete the following problems by editing the files below:
