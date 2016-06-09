@@ -20,7 +20,12 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> They both hold multiple values. Lists can be indexed and keep order while sets are unordered without indexes unable to have duplicate data. 
+Example of list: 
+  weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+Example of set: 
+  cart = set(['apple', 'banana', 'spam', 'ketchup', 'eggs'])
+Finding an element is faster in a set because it is hashabale.
 
 ---
 
@@ -28,7 +33,10 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Python's 'lambda' is a tool for building functions and similar to anonymous functions. It is typically used to write functions that are only used once.
+Syntax: lambda input: function_want_returned
+Example to sort x by last character: 
+  x_last = sorted(x, key=lambda x: x[-1])
 
 ---
 
@@ -36,7 +44,49 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehensions allow sequences to be built from other iterables, typically new list based on other lists.
+
+'map' will apply an operation to each item. Syntax: map(function, sequence)
+example:  doubled = map(lambda x: x*2, numbers)
+
+equivalent for loop:
+  def map(function, sequence):
+    result = []
+    for x in sequence:
+      result.append (function(x))
+    return result
+    
+example of doubled as a for loop:
+  numbers = [1, 2, 3, 4, 5]
+  doubled = []
+  for number in numbers:
+    doubled.append(numbers*2)
+
+'filter' will keep the element that returns True. Syntax: filter(function, iterable)
+keep positive numbers: pos = filter(lambda x: x>0, numbers)
+
+equivalent for loop:
+  def filter(function, iterable):
+    result = []
+    for x in iterable:
+      if (function):
+        result.append (x)
+    return result
+
+equivalent of keep positive numbers as a for loop:
+  pos = []
+  for x in numbers:
+    if (x>0):
+      numbers.append(x)
+  return pos
+
+It is a lot easier, compact, and elegant to use the built in 'map' and 'filter' functions.
+
+Set comprehension for removing duplicate names: 
+{name[0].upper() + name[1:].lower() for name in names}
+
+Dictionary comprehension for counting letters in words: 
+{letter : word.count(letter) for letter in word}
 
 ---
 
