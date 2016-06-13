@@ -1,6 +1,7 @@
 import pandas as pd
 from pandas import Series
 faculty = pd.read_csv("faculty.csv")
+
 #Removing all random . from degree names
 faculty[' degree'] = faculty[' degree'].str.replace('.','')
 
