@@ -24,12 +24,15 @@ for n in range(len(data)):
     else:
         faculty_dict[data[n][0]] = data[n][1:]
 
+for key, value in sorted(faculty_dict.items())[:3]:
+    print(key, value)
+
 #Create second dictionary
 full_names = zip(first_names, last_names)
 info = [list(b) for b in zip(degrees, title, email)]
 professor_dict = dict(zip(full_names, info))
 
-for key, value in sorted(professor_dict.items()):
+for key, value in sorted(professor_dict.items())[:3]:
     print(key, value)
     
 #Create keys with last name first
