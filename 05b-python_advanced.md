@@ -20,6 +20,7 @@ This data is available in this file:  [faculty.csv](python/faculty.csv)
 ####Q1. Find how many different degrees there are, and their frequencies: Ex:  PhD, ScD, MD, MPH, BSEd, MS, JD, etc.
 
 >> 
+```
 MPH      2
 0        1
 JD       1
@@ -29,15 +30,16 @@ MA       1
 MD       1
 PhD     31
 ScD      6
-
+```
 
 ####Q2. Find how many different titles there are, and their frequencies:  Ex:  Assistant Professor, Professor
 
 >>
+```
 Professor of Biostatistics              13
 Assistant Professor of Biostatistics    12
 Associate Professor of Biostatistics    12
-
+```
 
 ####Q3. Search for email addresses and put them in a list.  Print the list of email addresses.
 
@@ -79,11 +81,14 @@ faculty_dict = { 'Ellenberg': [['Ph.D.', 'Professor', 'sellenbe@upenn.edu'], ['P
 ```
 Print the first 3 key and value pairs of the dictionary:
 
->> 'Bellamy': ['ScD',
+>> 
+```
+'Bellamy': ['ScD',
   'Associate Professor of Biostatistics',
   'bellamys@mail.med.upenn.edu'],
  'Bilker': ['PhD', 'Professor of Biostatistics', 'warren@upenn.edu'],
  'Bryan': ['PhD', 'Assistant Professor of Biostatistics', 'bryanma@upenn.edu']
+```
 
 ####Q7.  The previous dictionary does not have the best design for keys.  Create a new dictionary with keys as:
 
