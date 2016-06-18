@@ -83,9 +83,7 @@ Print the first 3 key and value pairs of the dictionary:
 
 >> 
 ```
-'Bellamy': ['ScD',
-  'Associate Professor of Biostatistics',
-  'bellamys@mail.med.upenn.edu'],
+'Bellamy': ['ScD', 'Associate Professor of Biostatistics', 'bellamys@mail.med.upenn.edu'],
  'Bilker': ['PhD', 'Professor of Biostatistics', 'warren@upenn.edu'],
  'Bryan': ['PhD', 'Assistant Professor of Biostatistics', 'bryanma@upenn.edu']
 ```
