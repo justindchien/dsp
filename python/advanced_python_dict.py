@@ -33,8 +33,7 @@ for key, value in sorted(professor_dict.items()):
     print(key, value)
     
 #Create keys with last name first
-last_first = zip(last_names, first_names)
-professor_dict2 = dict(zip(last_first, info))
-
-for k, val in sorted(professor_dict2.items()):
-    print(k, val)
+keys = professor_dict.keys()
+ln_sort = sorted(keys, key=lambda name: name[1])
+for key in ln_sort:
+    print(key, professor_dict[key])
