@@ -1,6 +1,7 @@
-# Matrix Algebra
+# Matrix Algebra with results in comments
 
 import numpy as np
+
 A = np.matrix([[1,2,3],[2,7,4]])
 B = np.matrix([[1,-1],[0,1]])
 C = np.matrix([[5,-1],[9,1],[6,0]])
