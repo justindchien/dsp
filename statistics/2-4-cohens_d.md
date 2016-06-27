@@ -6,6 +6,7 @@ Exercise 4   Using the variable totalwgt_lb, investigate whether first babies ar
 '''
 import nsfg, math
 
+```python
 #Data for pregnancies
 preg = nsfg.ReadFemPreg()
 
@@ -29,6 +30,6 @@ def CohenEffectSize(group1, group2):
 
 #Cohens Effect on total weight of first vs after first babies
 CohenEffectSize(first.totalwgt_lb, after.totalwgt_lb)
-
 ```
+
 Cohen's effect size is -0.08867
