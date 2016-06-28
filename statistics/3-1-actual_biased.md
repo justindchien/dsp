@@ -33,7 +33,8 @@ print ('mean of observed: ', pmf.Mean())
 print ('mean of biased: ', a.Mean())
 ```
 PMF Graph
-![PMF](/users/justinchien/ds/metis/prework/dsp/statistics/PMF_graph.png)
+
+![PMF](https://github.com/justindchien/dsp/blob/master/statistics/PMF_graph.png?raw=true)
 
 mean of observed:  1.02420515504
 mean of biased:  2.40367910066
