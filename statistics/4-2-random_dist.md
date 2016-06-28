@@ -31,4 +31,4 @@ thinkplot.Show(xlabel='Number',ylabel='CDF')
 
 ![Rand_Num_CDF](https://github.com/justindchien/dsp/blob/master/statistics/rand_num_CDF.png?raw=true)
 
-The PMF graph is not a good visualization tool for the data. CDF line is relatively straight and seems to reflect a uniform distribution.
+The PMF graph is not a good visualization tool for the data. CDF line is relatively straight and seems to reflect a uniform distribution from 0 to 1.
