@@ -93,6 +93,7 @@ How do frequentist and Bayesian statistics compare?
 
 ```
 The frequentist approach does not take into account any prior knowledge or probabilities and purely relies on what the current dataset is able to tell. On the other hand, Bayesian statistics draws whatever information is already known and uses that knowledge to aid and direct the current analysis.
+
 ```
 
 ---
